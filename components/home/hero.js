@@ -1,51 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-function Partnerships() {
-  const images = [
-    {
-      image:
-        "https://edu.ieee.org/eg-ejust/wp-content/uploads/sites/904/2022/08/Untitled-design-1.png",
-      link: "https://www.alex.technesummit.com/2023",
-    },
-    {
-      image:
-        "https://edu.ieee.org/eg-ejust/wp-content/uploads/sites/904/2022/09/MFC.Logo_.circular.2022.png",
-      link: "https://makerfaire.com/",
-    },
-    {
-      image:
-        "https://edu.ieee.org/eg-ejust/wp-content/uploads/sites/904/2022/12/logos-RGB-06-370x208-1.png",
-      link: "https://eui.edu.eg/en/news/egypt-makes-electronics/",
-    },
-    {
-      image:
-        "https://edu.ieee.org/eg-ejust/wp-content/uploads/sites/904/2022/12/Huras-Student-Branch-370x143-1.jpeg",
-      link: "https://www.ieee.org/",
-    },
-    {
-      image:
-        "https://edu.ieee.org/eg-ejust/wp-content/uploads/sites/904/2022/12/Robota-Logo-370x123-1.png",
-      link: "https://www.robota-eg.com/",
-    },
-  ];
-
-  return (
-    <ul className="flex items-center gap-10">
-      {images.map((image, index) => (
-        <li key={index}>
-          <a target="_blank" href={image.link}>
-            <img
-              className="w-28 h-28 object-contain hover:scale-110 transition-all"
-              src={image.image}
-            />
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 export default function Hero() {
   return (
     <div className="h-screen flex flex-col justify-center items-center max-w-[1200px] min-w-[1024px] mx-auto gap-16">
@@ -63,7 +18,6 @@ export default function Hero() {
         </div>
         <img src="/hero.png" className="w-[40%]" />
       </div>
-      <Partnerships />
     </div>
   );
 }
