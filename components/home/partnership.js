@@ -31,7 +31,7 @@ export default function Partnerships() {
 
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-sky-100/25 gap-12 w-full">
-      <p className="text-3xl font-bold text-primary pb-2 border-b-4 w-fit border-primary">
+      <p className="text-3xl font-bold text-primary border-primary">
         Our Partnerships
       </p>
       <ul className="flex items-center gap-20 justify-center">
