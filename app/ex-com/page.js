@@ -41,5 +41,10 @@ export const highBoard = [
 ];
 
 export default function Page() {
-  return <div className="mt-[100px]"> <GridMembers highBoard={highBoard} /> </div>;
+  return (
+    <div className="mt-[100px]">
+      {" "}
+      <GridMembers highBoard={highBoard} />{" "}
+    </div>
+  );
 }

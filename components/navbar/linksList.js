@@ -29,7 +29,7 @@ export default function LinksList() {
       {links.map((link, index) => (
         <li key={index}>
           <Link
-            className={`hover:text-primary transition-all hover:border-b-4 border-primary py-2 ${
+            className={`hover:text-primary transition-all hover:border-b-4 border-primary py-1 ${
               pathname === link.path && "text-primary border-b-4 border-primary"
             }}`}
             href={link.path}
